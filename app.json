@@ -2,18 +2,17 @@
   "expo": {
     "name": "my-iot-app",
     "slug": "my-iot-app",
+    "scheme": "my-iot-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/ventilation.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/ven.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f5dbdb"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -25,6 +24,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "/assets/fonts/Sora-Regular.ttf",
+            "/assets/fonts/Sora-SemiBold.ttf",
+            "/assets/fonts/Sora-SemiBold.ttf"
+          ]
+        }
+      ]
+    ]
   }
 }
